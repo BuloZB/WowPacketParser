@@ -682,6 +682,8 @@ namespace WowPacketParser.Misc
             new KeyValuePair<ClientVersionBuild, DateTime>(ClientVersionBuild.V12_0_1_66263, new DateTime(2026, 03, 05)),
             new KeyValuePair<ClientVersionBuild, DateTime>(ClientVersionBuild.V12_0_1_66337, new DateTime(2026, 03, 10)),
             new KeyValuePair<ClientVersionBuild, DateTime>(ClientVersionBuild.V12_0_1_66384, new DateTime(2026, 03, 14)),
+            new KeyValuePair<ClientVersionBuild, DateTime>(ClientVersionBuild.V12_0_1_66431, new DateTime(2026, 03, 18)),
+            new KeyValuePair<ClientVersionBuild, DateTime>(ClientVersionBuild.V12_0_1_66527, new DateTime(2026, 03, 20)),
 
             // no classic info, pkt contain build in header
         };
@@ -1352,6 +1354,8 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V12_0_1_66263:
                 case ClientVersionBuild.V12_0_1_66337:
                 case ClientVersionBuild.V12_0_1_66384:
+                case ClientVersionBuild.V12_0_1_66431:
+                case ClientVersionBuild.V12_0_1_66527:
                     return ClientVersionBuild.V12_0_0_65390;
                 //Classic
                 case ClientVersionBuild.V1_13_2_31446:
@@ -1693,6 +1697,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_64802:
                 case ClientVersionBuild.V5_5_3_64857:
                 case ClientVersionBuild.V5_5_3_65746:
+                case ClientVersionBuild.V5_5_3_65890:
+                case ClientVersionBuild.V5_5_3_65988:
+                case ClientVersionBuild.V5_5_3_66128:
+                case ClientVersionBuild.V5_5_3_66290:
                 case ClientVersionBuild.V1_15_8_63829:
                 case ClientVersionBuild.V1_15_8_64057:
                 case ClientVersionBuild.V1_15_8_64130:
@@ -2398,6 +2406,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_64802:
                 case ClientVersionBuild.V5_5_3_64857:
                 case ClientVersionBuild.V5_5_3_65746:
+                case ClientVersionBuild.V5_5_3_65890:
+                case ClientVersionBuild.V5_5_3_65988:
+                case ClientVersionBuild.V5_5_3_66128:
+                case ClientVersionBuild.V5_5_3_66290:
                     return true;
                 default:
                     return false;
